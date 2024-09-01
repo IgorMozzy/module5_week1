@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Deletion{% endblock %}
+
+{% block header %}Deletion{% endblock %}
+
+{% block content %}
+    <p>Are you really sure you want to delete note {{ object.title }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, delete it!</button>
+        <a href="{% url 'home' %}" class="href_button dif_button">No, I've changed my mind!</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ note.title }}{% endblock %}
+
+{% block header %} Your note id: {{ note.id }} {% endblock %}
+
+{% block content %}
+    <p>Title: {{ note.title }}</p>
+    <p>Description: {{ note.description }}</p>
+    <p>Created: {{ note.created_at }}</p>
+    <p>Updated: {{ note.updated_at }}</p>
+
+    <a href="{% url 'note_edit' note.pk %}" class="href_button">Edit</a>
+    <a href="{% url 'note_delete' note.pk %}" class="href_button dif_button">Delete</a>
+    <a href="{% url 'home' %}" class="href_button">Back</a>
+{% endblock %}

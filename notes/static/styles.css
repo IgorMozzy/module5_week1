@@ -1,0 +1,106 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Стили для заголовков */
+header h1, h2 {
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* Основные стили для контента */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для списков */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для форм */
+form {
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button, a.href_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a.dif_button {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

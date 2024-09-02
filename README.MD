@@ -3,10 +3,11 @@
 ## Установка
 
 1. Клонируйте репозиторий
-2. Установите зависимости: `pip install -r requirements.txt`
-3. Примените миграции: `python manage.py migrate`
-4. Создайте суперпользователя-администратора `python manage.py createsuperuser`
-5. Запустите сервер: `python manage.py runserver`
+2. Создайте .env файл в корне проекта, .env.sample являет собой образец готовой конфигурации для тестового запуска
+3. Установите зависимости: `pip install -r requirements.txt`
+4. Примените миграции: `python manage.py migrate`
+5. Создайте суперпользователя-администратора `python manage.py createsuperuser`
+6. Запустите сервер: `python manage.py runserver`
 
 ## Использование
 

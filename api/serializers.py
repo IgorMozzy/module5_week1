@@ -2,10 +2,12 @@ from rest_framework import serializers
 from notes.models import Note
 from django.contrib.auth import get_user_model
 
+UserModel = get_user_model()
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = get_user_model()
+        model = UserModel
         fields = ['id', 'username', 'email', 'password']
 
     def create(self, validated_data):

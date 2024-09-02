@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from .forms import NoteForm
 from .models import Note
 from django.contrib.auth import authenticate, login
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
 
 from django.contrib.auth.forms import AuthenticationForm
 
@@ -41,13 +41,13 @@ def home_view(request):
     })
 
 
-class NoteListView(ListView):
-    model = Note
-    template_name = 'note_list.html'
-    context_object_name = 'notes'
-
-    def get_queryset(self):
-        return Note.objects.filter(user=self.request.user)
+# class NoteListView(ListView):
+#     model = Note
+#     template_name = 'note_list.html'
+#     context_object_name = 'notes'
+#
+#     def get_queryset(self):
+#         return Note.objects.filter(user=self.request.user)
 
 
 class NoteDetailView(DetailView):
